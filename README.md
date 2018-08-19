@@ -1,5 +1,5 @@
 # Dionysus.jl
-[contributors](https://jempyre.github.io/Dionysus.jl/authors/)
+[contributors](https://jempyre.github.io/Dionysus.jl/about.html)
 
 [gPages](https://jempyre.github.io/Dionysus.jl/)
   
