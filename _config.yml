@@ -32,7 +32,7 @@ defaults:
     path: "" # an empty string here means all files in the project
   values:
     content-type: posts #posts, pages, drafts, or your collections
-    layout: 
+    layout:
     cache-control: {% if JEKYLL_ENV=production %}false{% endif %}
 -
   scope:
