@@ -10,7 +10,7 @@ using Metalhead: classify
 ###
 
 #
-TEST_IMG = "/home/jh/Downloads/media/fff/irina-b-threes-company-i-01.jpg"
+TEST_IMG = ""
 vgg = VGG19()
 img = load(TEST_IMG)
 ###
