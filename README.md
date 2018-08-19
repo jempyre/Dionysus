@@ -2,7 +2,10 @@
 [contributors](https://jempyre.github.io/Dionysus.jl/about.html)
 
 [gPages](https://jempyre.github.io/Dionysus.jl/)
-  
+
+## Abstract 
+
+A family friendly, yet business oriented content management system for the 21st century.
 
 [![Build Status](https://travis-ci.org/jempyre/Dionysus.jl.svg?branch=master)](https://travis-ci.org/jempyre/Dionysus.jl)
 
