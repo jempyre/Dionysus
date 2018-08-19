@@ -1,0 +1,76 @@
+title = "Đionysus"
+description = "A family friendly yet business oriented content management system for the 21ˢᵗ Century!"
+categories = "data-entry, project"
+tags = "ml, ai, flux, metalhead, forms"
+copyright = "©2018, iFamyre: Havel!"
+[author]
+  name = "Jonah E Havel"
+  org = ""
+  blog = ""
+  github = "jΣΠi2ϱ⁠²6.283"5
+  contact = "jonah.havel@protonmail.ch"
+  personal = ""
+  fb = "https://www.facebook.com/profile.php?id=100010155105612"
+  gplus = "jonah.havel"
+  linkedin = ""
+  pinterest = ""
+
+[editor]
+  name = "MirÆsthetiq"
+  org = ""
+  blog = ""
+  github = "6758"
+  contact = ""
+  personal = ""
+  fb = ""
+  gplus = ""
+  linkedin = ""
+  pinterest = ""
+
+[op]
+  name = ""
+  org = ""
+  blog = ""
+  github = ""
+  contact = ""
+  personal = ""
+  fb = ""
+  gplus = ""
+  linkedin = ""
+  pinterest = ""
+
+[tester]
+  name = ""
+  org = ""
+  blog = ""
+  github = ""
+  contact = ""
+  personal = ""
+  fb = ""
+  gplus = ""
+  linkedin = ""
+  pinterest = ""
+
+[resources]
+  dir = "Dionysus"
+  reqs = "REQUIRE"
+  license = "LICENSE.md"
+  docs = "README.md"
+
+[resources.src]
+  dir = "/src/"
+  config = "config.toml"
+  setup = "setup.jl"
+  main = "Dionysus.jl"
+
+[resources.test]
+  dir = "/test/"
+  config = "config.toml"
+  setup = "setup.jl"
+  main = "runtests.jl"
+
+[resources.data]
+  dir = "/src/"
+  config = "config.toml"
+  setup = "setup.jl"
+  main = "Dionysus.jl"
