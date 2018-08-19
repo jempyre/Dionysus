@@ -1,6 +1,7 @@
 # Dionysus.jl
-[contributors](authors)
+[contributors](https://jempyre.github.io/Dionysus.jl/authors/)
 
+[gPages](https://jempyre.github.io/Dionysus.jl/)
   
 
 [![Build Status](https://travis-ci.org/jempyre/Dionysus.jl.svg?branch=master)](https://travis-ci.org/jempyre/Dionysus.jl)
