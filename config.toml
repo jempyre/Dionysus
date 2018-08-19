@@ -1,13 +1,15 @@
 title = "Đionysus"
 description = "A family friendly yet business oriented content management system for the 21ˢᵗ Century!"
-categories = "data-entry, project"
-tags = "ml, ai, flux, metalhead, forms"
-copyright = "©2018, iFamyre: Havel!"
+
+
 [author]
   name = "Jonah E Havel"
   org = ""
   blog = ""
-  github = "jΣΠi2ϱ⁠²6.283"5
+  github = "jempyre"
+  gh-canonical = "__jΣΠi2ϱ⁠²__"
+  gh-decor = "__jΣΠi2ϱ⁠²__"
+  firefox = "jΣΠi6.283ϱ⁠²"
   contact = "jonah.havel@protonmail.ch"
   personal = ""
   fb = "https://www.facebook.com/profile.php?id=100010155105612"
