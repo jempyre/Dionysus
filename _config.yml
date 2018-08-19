@@ -1,0 +1,51 @@
+theme: jekyll-theme-hacker
+show-drafts: false
+build-cmd: `JEKYLL_ENV=devel; jekyll build --config _config.yml,config.toml -w`
+destination: # change default build output
+exclude: /src/devel/ # use as scratch area... no commits to master or devel
+include: #include files or dirs NOTE: needed for .files
+keep_files: # do not clobber on rebuild NOTE: paths rel to destination
+timezone: America/Chicago
+strict_front_matter: true #build fails if front matter mistake
+profile: false # generate a performance profile
+
+## serve options ##
+port: 1313
+hostname: localhost
+baseurl: # serve from the given base url
+detach: false # detach server from terminal
+
+## custom headers to add to files
+webrick:
+  headers:
+    categories: "data-entry,project"
+    tags: "ml,ai,flux,metalhead,forms"
+    copyright: "©2018, Famylr Havel"
+    exclude: false # exclude from the final output
+    data: false #change to a path to specify
+    css:
+    script:
+
+defaults:
+-
+  scope:
+    path: "" # an empty string here means all files in the project
+  values:
+    content-type: posts #posts, pages, drafts, or your collections
+    layout:
+    cache-control: {% if JEKYLL_ENV=production %}false{% endif %}
+-
+  scope:
+    path: "" # an empty string here means all files in the project
+    type: posts
+  values:
+    content-type: posts #posts, pages, drafts, or your collections
+    layout: "baseof"
+    cache-control: {% if JEKYLL_ENV=production %}false{% endif %}
+-
+  scope:
+    path: "test"
+  values:
+    content-type: pages #or dirs, in other words
+    layout: "test-dash"
+    cache-control: {% if JEKYLL_ENV=production %}false{% endif %}
