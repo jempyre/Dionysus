@@ -1,10 +1,11 @@
 ---
 title: About
-date: {{ Date }}
+date: 2018-08-18
 contributors:
-  - [[jempyre]]
-  - [[miraesthetiq]]
-  
+  - jempyre:
+      canonical: __jΣΠi2ϱ⁠²__
+  - miraesthetiq
+      canonical: 
 ---
 
 # About
