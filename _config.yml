@@ -1,19 +1,21 @@
+title: _Config
 theme: jekyll-theme-hacker
-show-drafts: false
+author: Jonah E Havel
 build-cmd: `JEKYLL_ENV=devel; jekyll build --config _config.yml,config.toml -w`
-destination: # change default build output
-exclude: /src/devel/ # use as scratch area... no commits to master or devel
-include: #include files or dirs NOTE: needed for .files
 keep_files: # do not clobber on rebuild NOTE: paths rel to destination
-timezone: America/Chicago
-strict_front_matter: true #build fails if front matter mistake
-profile: false # generate a performance profile
 
-## serve options ##
-port: 1313
-hostname: localhost
-baseurl: # serve from the given base url
-detach: false # detach server from terminal
+
+# Where things are
+source:          .
+destination:     ./_site
+collections_dir: .
+plugins_dir:     _plugins
+layouts_dir:     _layouts
+data_dir:        _data
+includes_dir:    _includes
+collections:
+  posts:
+    output:   true
 
 ## custom headers to add to files
 webrick:
@@ -26,6 +28,51 @@ webrick:
     css:
     script:
 
+
+# Handling Reading
+safe:                false
+include:             [".htaccess"]
+exclude:             ["*.jpg", "*.gif", "*.mp4", "Gemfile", "Gemfile.lock", "node_modules", "vendor/bundle/", "vendor/cache/", "vendor/gems/", "vendor/ruby/"]
+keep_files:          [".git", ".svn"]
+encoding:            "utf-8"
+markdown_ext:        "markdown,mkdown,mkdn,mkd,md,txt"
+strict_front_matter: true
+
+
+
+# Filtering Content
+show_drafts: true
+limit_posts: 0
+future:      false
+unpublished: false
+
+# Plugins
+whitelist: []
+plugins:   []
+
+# Conversion
+markdown:    kramdown
+highlighter: rouge
+lsi:         false
+excerpt_separator: "\n\n"
+incremental: false
+
+# Serving
+detach:  false
+port:    4000
+host:    127.0.0.1
+baseurl: "" # does not include hostname
+show_dir_listing: true
+profile: false # generate a performance profile
+
+# Outputting
+#permalink:     date
+permalink:  title
+paginate_path: /page:num
+timezone: America/Chicago
+
+quiet:    false
+verbose:  true
 defaults:
 -
   scope:
@@ -49,3 +96,47 @@ defaults:
     content-type: pages #or dirs, in other words
     layout: "test-dash"
     cache-control: {% if JEKYLL_ENV=production %}false{% endif %}
+-
+    scope: #html here will use this
+      path: "projects"
+      type: "pages" # previously `page` in Jekyll 2.2.
+    values:
+      layout: "project" # overrides previous default layout
+      author: "Jonah E Havel" #sets page.author
+      cache-control: {% if JEKYLL_ENV=production %}false{% endif %}
+-
+  scope:
+    path: ""
+    type: "my_collection" # a collection in your site, in plural form
+  values:
+    layout: "inventory"
+    cache-control: {% if JEKYLL_ENV=production %}false{% endif %}
+-
+  scope:
+    path: "*/*_index.*"
+  values:
+    layout: "listing"
+    cache-control: {% if JEKYLL_ENV=production %}false{% endif %}
+
+
+liquid:
+  error_mode:       warn
+  strict_filters:   false
+  strict_variables: false
+
+# Markdown Processors
+rdiscount:
+  extensions: []
+
+redcarpet:
+  extensions: []
+
+kramdown:
+  auto_ids:      true
+  entity_output: as_char
+  toc_levels:    1..6
+  smart_quotes:  lsquo,rsquo,ldquo,rdquo
+  input:         GFM
+  hard_wrap:     false
+  footnote_nr:   1
+  show_warnings: false
