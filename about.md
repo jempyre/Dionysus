@@ -15,7 +15,8 @@ Project Description
 ## Contributors
 
 ### __jΣΠi2ϱ⁠²__ {#jempyre .canonical .contributor .author}
-high-decor: 2023__🔥_/🔆jΣΠi2ϱ⁠²👑\_🔥__2476
+high-decor: 
+    `2023` __🔥_/🔆jΣΠi2ϱ⁠²👑\\__🔥__ `2476`
 decor: "
 
 ### miraesthetiq {#mirae .contributor .editor .author}
